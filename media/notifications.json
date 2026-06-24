@@ -1,0 +1,138 @@
+[
+  {
+    "id": "n1",
+    "type": "follow_request",
+    "username": "foto_viajera",
+    "displayName": "Foto Viajera",
+    "avatar": "media/avatars/foto_viajera.jpg",
+    "text": "quiere seguirte.",
+    "date": "2026-06-23T14:30:00",
+    "read": false
+  },
+  {
+    "id": "n2",
+    "type": "follow_request",
+    "username": "dev_latam",
+    "displayName": "Dev Latinoamérica",
+    "avatar": "media/avatars/dev_latam.jpg",
+    "text": "quiere seguirte.",
+    "date": "2026-06-23T11:15:00",
+    "read": false
+  },
+  {
+    "id": "n3",
+    "type": "follow_request",
+    "username": "gastronomia_ar",
+    "displayName": "Gastronomía Argentina",
+    "avatar": "media/avatars/gastronomia_ar.jpg",
+    "text": "quiere seguirte.",
+    "date": "2026-06-22T20:00:00",
+    "read": false
+  },
+  {
+    "id": "n4",
+    "type": "like",
+    "username": "natgeo",
+    "displayName": "National Geographic",
+    "avatar": "media/avatars/natgeo.jpg",
+    "verified": true,
+    "text": "le gustó tu foto.",
+    "date": "2026-06-23T13:00:00",
+    "read": false,
+    "postThumb": "media/feed/mi_foto1.jpg",
+    "postThumbBg": "#833ab4"
+  },
+  {
+    "id": "n5",
+    "type": "like",
+    "username": "tomas.dev",
+    "displayName": "Tomás Dev",
+    "avatar": "media/avatars/tomas.jpg",
+    "text": "le gustó tu foto.",
+    "date": "2026-06-23T12:45:00",
+    "read": false,
+    "postThumb": "media/feed/mi_foto1.jpg",
+    "postThumbBg": "#4facfe"
+  },
+  {
+    "id": "n6",
+    "type": "like",
+    "username": "viajes_latam",
+    "displayName": "Viajes LATAM",
+    "avatar": "media/avatars/viajes.jpg",
+    "verified": true,
+    "text": "le gustó tu video.",
+    "date": "2026-06-23T10:20:00",
+    "read": true,
+    "postThumb": "media/feed/mi_video1.jpg",
+    "postThumbBg": "#43e97b"
+  },
+  {
+    "id": "n7",
+    "type": "comment",
+    "username": "foodie_uy",
+    "displayName": "Comidas del Mundo",
+    "avatar": "media/avatars/foodie.jpg",
+    "text": "comentó en tu foto: \"¡Increíble toma! Ese color del cielo es una locura 😍\"",
+    "date": "2026-06-23T09:30:00",
+    "read": true,
+    "postThumb": "media/feed/mi_foto1.jpg",
+    "postThumbBg": "#fa709a"
+  },
+  {
+    "id": "n8",
+    "type": "comment",
+    "username": "surfing_sa",
+    "displayName": "Surf Sudamérica",
+    "avatar": "media/avatars/surf.jpg",
+    "text": "comentó en tu foto: \"¡Esas olas se ven épicas! ¿Dónde fue esto? 🏄\"",
+    "date": "2026-06-22T18:00:00",
+    "read": true,
+    "postThumb": "media/feed/mi_foto2.jpg",
+    "postThumbBg": "#00f2fe"
+  },
+  {
+    "id": "n9",
+    "type": "mention",
+    "username": "arte_digital",
+    "displayName": "Arte Digital",
+    "avatar": "media/avatars/arte.jpg",
+    "text": "te mencionó en un comentario: \"@tu_usuario esto te va a gustar 🎨\"",
+    "date": "2026-06-22T15:30:00",
+    "read": true,
+    "postThumb": "media/feed/arte1.jpg",
+    "postThumbBg": "#a18cd1"
+  },
+  {
+    "id": "n10",
+    "type": "follow",
+    "username": "musica_sa",
+    "displayName": "Música Sudamérica",
+    "avatar": "media/avatars/musica_sa.jpg",
+    "text": "empezó a seguirte.",
+    "date": "2026-06-22T10:00:00",
+    "read": true
+  },
+  {
+    "id": "n11",
+    "type": "like",
+    "username": "deportes_uy",
+    "displayName": "Deportes Uruguay",
+    "avatar": "media/avatars/deportes_uy.jpg",
+    "text": "y otras 14 personas les gustó tu foto.",
+    "date": "2026-06-21T20:00:00",
+    "read": true,
+    "postThumb": "media/feed/mi_foto2.jpg",
+    "postThumbBg": "#fd1d1d"
+  },
+  {
+    "id": "n12",
+    "type": "follow",
+    "username": "foto_viajera",
+    "displayName": "Foto Viajera",
+    "avatar": "media/avatars/foto_viajera.jpg",
+    "text": "también empezó a seguirte.",
+    "date": "2026-06-20T14:00:00",
+    "read": true
+  }
+]

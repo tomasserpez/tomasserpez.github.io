@@ -1,0 +1,22 @@
+profile.json
+
+  "highlights": [
+    { "id": "h1", "title": "Viajes",   "cover": "", "bgColor": "#f77f00" },
+    { "id": "h2", "title": "Comida",   "cover": "", "bgColor": "#d62828" },
+    { "id": "h3", "title": "Trabajo",  "cover": "", "bgColor": "#023e8a" },
+    { "id": "h4", "title": "Amigos",   "cover": "", "bgColor": "#588157" },
+    { "id": "h5", "title": "Mascotas", "cover": "", "bgColor": "#9b2226" }
+  ],
+
+  "posts": [
+    { "id": "p1", "type": "image", "file": "", "thumb": "", "bgColor": "#833ab4", "alt": "Post 1" },
+    { "id": "p2", "type": "image", "file": "", "thumb": "", "bgColor": "#fd1d1d", "alt": "Post 2" },
+    { "id": "p3", "type": "video", "file": "", "thumb": "", "bgColor": "#fcb045", "alt": "Post 3" },
+    { "id": "p4", "type": "image", "file": "", "thumb": "", "bgColor": "#4facfe", "alt": "Post 4" },
+    { "id": "p5", "type": "image", "file": "", "thumb": "", "bgColor": "#43e97b", "alt": "Post 5" },
+    { "id": "p6", "type": "video", "file": "", "thumb": "", "bgColor": "#f953c6", "alt": "Post 6" },
+    { "id": "p7", "type": "image", "file": "", "thumb": "", "bgColor": "#0f3460", "alt": "Post 7" },
+    { "id": "p8", "type": "image", "file": "", "thumb": "", "bgColor": "#e94560", "alt": "Post 8" },
+    { "id": "p9", "type": "image", "file": "", "thumb": "", "bgColor": "#16213e", "alt": "Post 9" }
+  ]
+}

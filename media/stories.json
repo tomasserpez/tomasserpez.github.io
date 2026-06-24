@@ -1,0 +1,146 @@
+[
+  {
+    "id": "s1",
+    "isYou": true,
+    "username": "beluu",
+    "displayName": "Tu historia",
+    "avatar": "media/avatars/Pfp.png",
+    "seen": false,
+    "slides": [
+      {
+        "type": "image",
+        "file": "media/stories/mi_historia1.jpg",
+        "duration": 5,
+        "text": "Mi primer historia 📸",
+        "textColor": "#ffffff",
+        "bgColor": "#833ab4"
+      }
+    ]
+  },
+  {
+    "id": "s2",
+    "username": "natgeo",
+    "displayName": "National Geographic",
+    "avatar": "media/avatars/natgeo.jpg",
+    "seen": false,
+    "slides": [
+      {
+        "type": "image",
+        "file": "media/stories/natgeo_1.jpg",
+        "duration": 5,
+        "text": "Amanecer en los Andes 🏔️",
+        "textColor": "#ffffff",
+        "bgColor": "#1a1a2e"
+      },
+      {
+        "type": "image",
+        "file": "media/stories/natgeo_2.jpg",
+        "duration": 5,
+        "text": "La naturaleza nunca deja de sorprendernos 🌿",
+        "textColor": "#ffffff",
+        "bgColor": "#16213e"
+      }
+    ]
+  },
+  {
+    "id": "s3",
+    "username": "tomas.dev",
+    "displayName": "Tomás Dev",
+    "avatar": "media/avatars/tomas.jpg",
+    "seen": false,
+    "slides": [
+      {
+        "type": "image",
+        "file": "media/stories/tomas_1.jpg",
+        "duration": 7,
+        "text": "Nuevo proyecto en marcha 🚀 #webdev",
+        "textColor": "#ffffff",
+        "bgColor": "#4facfe"
+      }
+    ]
+  },
+  {
+    "id": "s4",
+    "username": "foodie_uy",
+    "displayName": "Comidas del Mundo",
+    "avatar": "media/avatars/foodie.jpg",
+    "seen": true,
+    "slides": [
+      {
+        "type": "image",
+        "file": "media/stories/foodie_1.jpg",
+        "duration": 5,
+        "text": "Empanadas recién hechas 🥟🔥",
+        "textColor": "#ffffff",
+        "bgColor": "#fa709a"
+      },
+      {
+        "type": "image",
+        "file": "media/stories/foodie_2.jpg",
+        "duration": 5,
+        "text": "Asado de domingo con los amigos 🥩",
+        "textColor": "#ffffff",
+        "bgColor": "#f77f00"
+      }
+    ]
+  },
+  {
+    "id": "s5",
+    "username": "viajes_latam",
+    "displayName": "Viajes LATAM",
+    "avatar": "media/avatars/viajes.jpg",
+    "seen": true,
+    "slides": [
+      {
+        "type": "image",
+        "file": "media/stories/viajes_1.jpg",
+        "duration": 6,
+        "text": "Machu Picchu desde arriba 🌄",
+        "textColor": "#ffffff",
+        "bgColor": "#43e97b"
+      }
+    ]
+  },
+  {
+    "id": "s6",
+    "username": "arte_digital",
+    "displayName": "Arte Digital",
+    "avatar": "media/avatars/arte.jpg",
+    "seen": false,
+    "slides": [
+      {
+        "type": "image",
+        "file": "media/stories/arte_1.jpg",
+        "duration": 5,
+        "text": "Nueva obra disponible 🎨",
+        "textColor": "#ffffff",
+        "bgColor": "#a18cd1"
+      }
+    ]
+  },
+  {
+    "id": "s7",
+    "username": "surfing_sa",
+    "displayName": "Surf Sudamérica",
+    "avatar": "media/avatars/surf.jpg",
+    "seen": false,
+    "slides": [
+      {
+        "type": "image",
+        "file": "media/stories/surf_1.jpg",
+        "duration": 5,
+        "text": "Las olas están increíbles hoy 🌊🏄",
+        "textColor": "#ffffff",
+        "bgColor": "#4facfe"
+      },
+      {
+        "type": "image",
+        "file": "media/stories/surf_2.jpg",
+        "duration": 5,
+        "text": "Punta del Este siempre sorprende 🏖️",
+        "textColor": "#ffffff",
+        "bgColor": "#00f2fe"
+      }
+    ]
+  }
+]

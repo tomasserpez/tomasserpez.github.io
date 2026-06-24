@@ -1,0 +1,218 @@
+[
+  {
+    "id": "c1",
+    "username": "natgeo",
+    "displayName": "National Geographic",
+    "avatar": "media/avatars/natgeo.jpg",
+    "verified": true,
+    "online": true,
+    "unread": 2,
+    "messages": [
+      {
+        "id": "m1",
+        "from": "natgeo",
+        "text": "¡Hola! Vimos que te gustaron nuestras fotos de la Patagonia 🌄",
+        "date": "2026-06-23T08:00:00"
+      },
+      {
+        "id": "m2",
+        "from": "me",
+        "text": "¡Sí! Son increíbles. ¿Cómo hacen para llegar a esos lugares?",
+        "date": "2026-06-23T08:05:00"
+      },
+      {
+        "id": "m3",
+        "from": "natgeo",
+        "text": "Tenemos fotógrafos en todo el mundo que dedican meses a cada expedición 📷",
+        "date": "2026-06-23T08:10:00"
+      },
+      {
+        "id": "m4",
+        "from": "me",
+        "text": "Wow, suena increíble. ¡Me gustaría hacer algo así algún día!",
+        "date": "2026-06-23T08:12:00"
+      },
+      {
+        "id": "m5",
+        "from": "natgeo",
+        "text": "¡Podés postularte a nuestro programa de fotógrafos emergentes! 🌍",
+        "date": "2026-06-23T09:00:00"
+      },
+      {
+        "id": "m6",
+        "from": "natgeo",
+        "text": "Acá te dejo el link con toda la info 👆",
+        "date": "2026-06-23T09:01:00"
+      }
+    ]
+  },
+  {
+    "id": "c2",
+    "username": "tomas.dev",
+    "displayName": "Tomás Dev",
+    "avatar": "media/avatars/tomas.jpg",
+    "verified": false,
+    "online": true,
+    "unread": 0,
+    "messages": [
+      {
+        "id": "m1",
+        "from": "tomas.dev",
+        "text": "Ey! Vi que también usás JavaScript, ¿te interesa colaborar en un proyecto?",
+        "date": "2026-06-22T15:00:00"
+      },
+      {
+        "id": "m2",
+        "from": "me",
+        "text": "¡Claro! ¿De qué se trata?",
+        "date": "2026-06-22T15:30:00"
+      },
+      {
+        "id": "m3",
+        "from": "tomas.dev",
+        "text": "Estoy armando una app de mapas para comunidades locales. Full stack con Node y React.",
+        "date": "2026-06-22T15:35:00"
+      },
+      {
+        "id": "m4",
+        "from": "me",
+        "text": "Suena muy bien. ¿Cuándo arrancamos?",
+        "date": "2026-06-22T15:40:00"
+      },
+      {
+        "id": "m5",
+        "from": "tomas.dev",
+        "text": "La semana que viene! Te mando el repositorio 🚀",
+        "date": "2026-06-22T15:41:00"
+      }
+    ]
+  },
+  {
+    "id": "c3",
+    "username": "viajes_latam",
+    "displayName": "Viajes LATAM",
+    "avatar": "media/avatars/viajes.jpg",
+    "verified": true,
+    "online": false,
+    "unread": 1,
+    "messages": [
+      {
+        "id": "m1",
+        "from": "viajes_latam",
+        "text": "¡Hola! ¿Ya visitaste la Patagonia? 🏔️",
+        "date": "2026-06-21T10:00:00"
+      },
+      {
+        "id": "m2",
+        "from": "me",
+        "text": "Todavía no, pero está en mi lista de pendientes 😅",
+        "date": "2026-06-21T10:10:00"
+      },
+      {
+        "id": "m3",
+        "from": "viajes_latam",
+        "text": "¡Tenemos paquetes increíbles para fin de año! Menos de $800 USD todo incluido 🌄",
+        "date": "2026-06-23T11:00:00"
+      }
+    ]
+  },
+  {
+    "id": "c4",
+    "username": "foodie_uy",
+    "displayName": "Comidas del Mundo",
+    "avatar": "media/avatars/foodie.jpg",
+    "verified": false,
+    "online": false,
+    "unread": 0,
+    "messages": [
+      {
+        "id": "m1",
+        "from": "me",
+        "text": "¿Me pasás la receta de las empanadas que publicaste? 🥟",
+        "date": "2026-06-20T12:00:00"
+      },
+      {
+        "id": "m2",
+        "from": "foodie_uy",
+        "text": "¡Claro! 500g de harina, 200g de manteca, sal... ¿querés el relleno también?",
+        "date": "2026-06-20T12:15:00"
+      },
+      {
+        "id": "m3",
+        "from": "me",
+        "text": "¡Sí por favor! Las quiero hacer este finde",
+        "date": "2026-06-20T12:16:00"
+      },
+      {
+        "id": "m4",
+        "from": "foodie_uy",
+        "text": "Relleno: 500g de carne picada, 2 cebollas, pimentón, comino y ají molido. Dorás la cebolla, agregás la carne y condimentás. ¡Fácil! 🔥",
+        "date": "2026-06-20T12:20:00"
+      },
+      {
+        "id": "m5",
+        "from": "me",
+        "text": "¡Gracias! Ya te cuento cómo salen 😊",
+        "date": "2026-06-20T12:22:00"
+      }
+    ]
+  },
+  {
+    "id": "c5",
+    "username": "surfing_sa",
+    "displayName": "Surf Sudamérica",
+    "avatar": "media/avatars/surf.jpg",
+    "verified": false,
+    "online": true,
+    "unread": 0,
+    "messages": [
+      {
+        "id": "m1",
+        "from": "surfing_sa",
+        "text": "¿Sabés surfear? 🏄",
+        "date": "2026-06-19T16:00:00"
+      },
+      {
+        "id": "m2",
+        "from": "me",
+        "text": "Algo básico, ¡me encantaría mejorar!",
+        "date": "2026-06-19T16:05:00"
+      },
+      {
+        "id": "m3",
+        "from": "surfing_sa",
+        "text": "Damos clases en Punta del Este todos los fines de semana. ¡Te esperamos! 🌊",
+        "date": "2026-06-19T16:10:00"
+      }
+    ]
+  },
+  {
+    "id": "c6",
+    "username": "arte_digital",
+    "displayName": "Arte Digital",
+    "avatar": "media/avatars/arte.jpg",
+    "verified": false,
+    "online": false,
+    "unread": 0,
+    "messages": [
+      {
+        "id": "m1",
+        "from": "arte_digital",
+        "text": "¡Me encantó tu comentario sobre mi última pieza! 🎨",
+        "date": "2026-06-18T20:00:00"
+      },
+      {
+        "id": "m2",
+        "from": "me",
+        "text": "¡Es hermosa! ¿Cuánto tiempo tardaste en hacerla?",
+        "date": "2026-06-18T20:10:00"
+      },
+      {
+        "id": "m3",
+        "from": "arte_digital",
+        "text": "Unas 3 horas de proceso generativo más 2 de curación y edición. No es tan rápido como parece 😅",
+        "date": "2026-06-18T20:15:00"
+      }
+    ]
+  }
+]
