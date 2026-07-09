@@ -1640,3 +1640,15 @@ img, video { display: block; max-width: 100%; }
   z-index: 3;
 }
 .feed-expand-btn svg { width: 16px; height: 16px; }
+
+.yt-wrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+.yt-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}

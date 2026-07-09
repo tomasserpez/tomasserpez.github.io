@@ -327,8 +327,27 @@ function buildPost(post) {
   const isFollowing = followingMap.has(post.username);
   const g = userGradient(post.username);
 
+  function ytId(url) {
+    const m = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([A-Za-z0-9_-]{11})/);
+    return m ? m[1] : null;
+  }
+
   let mediaEl = '';
-  if (post.type === 'video') {
+  if (post.type === 'youtube') {
+    const id = ytId(post.file || '');
+    if (id) {
+      mediaEl = `
+        <div class="yt-wrap">
+          <iframe src="https://www.youtube.com/embed/${id}?rel=0&modestbranding=1"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+        </div>`;
+    } else {
+      mediaEl = `<div class="media-placeholder gradient-avatar ${g}" style="display:flex;flex-direction:column;gap:10px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5,3 19,12 5,21"/></svg>
+        <span style="font-size:12px">${post.title}</span></div>`;
+    }
+  } else if (post.type === 'video') {
     if (post.file) {
       mediaEl = `
         <video src="${post.file}" loop playsinline preload="none"
@@ -556,11 +575,12 @@ function renderSuggestions() {
   const c = document.getElementById('suggestions-list');
   if (!c) return;
   const s = [
-    {username:'foto_viajera', reason:'Seguido por natgeo'},
-    {username:'dev_latam',    reason:'Sugerido para ti'},
-    {username:'gastronomia_ar', reason:'Nuevo en Instagram'},
-    {username:'deportes_uy', reason:'Seguido por surfing_sa'},
-    {username:'musica_sa',   reason:'Sugerido para ti'},
+    {username:'tales_mileto', reason:'Seguido por El Socrates'},
+    {username:'eraclito_efeso',    reason:'Sugerido para ti'},
+    {username:'anaximenes_ok', reason:'Nuevo en Instagram'},
+    {username:'pitagoras', reason:'Seguido por Aristoteles'},
+    {username:'epicuro',   reason:'Sugerido para ti'},
+    {username:'diogenes',   reason:'Sugerido para ti'},
   ];
   c.innerHTML = s.map(sg => `
     <div class="suggestion-item">

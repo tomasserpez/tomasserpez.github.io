@@ -1,159 +1,93 @@
 [
   {
     "id": "c1",
-    "username": "natgeo",
-    "displayName": "National Geographic",
-    "avatar": "media/avatars/natgeo.jpg",
+    "username": "socratesok",
+    "displayName": "El Socrates",
+    "avatar": "media/avatars/Socrates.png",
     "verified": true,
     "online": true,
     "unread": 2,
     "messages": [
       {
         "id": "m1",
-        "from": "natgeo",
-        "text": "¡Hola! Vimos que te gustaron nuestras fotos de la Patagonia 🌄",
+        "from": "socratesok",
+        "text": "Che, cuando nos vemos? 🤔",
         "date": "2026-06-23T08:00:00"
       },
       {
         "id": "m2",
         "from": "me",
-        "text": "¡Sí! Son increíbles. ¿Cómo hacen para llegar a esos lugares?",
+        "text": "Sí! Sabías que te estaba por hablar para preguntarte?",
         "date": "2026-06-23T08:05:00"
       },
       {
         "id": "m3",
-        "from": "natgeo",
-        "text": "Tenemos fotógrafos en todo el mundo que dedican meses a cada expedición 📷",
+        "from": "socratesok",
+        "text": "No... yo solo se que no se nada...",
         "date": "2026-06-23T08:10:00"
-      },
-      {
-        "id": "m4",
-        "from": "me",
-        "text": "Wow, suena increíble. ¡Me gustaría hacer algo así algún día!",
-        "date": "2026-06-23T08:12:00"
-      },
-      {
-        "id": "m5",
-        "from": "natgeo",
-        "text": "¡Podés postularte a nuestro programa de fotógrafos emergentes! 🌍",
-        "date": "2026-06-23T09:00:00"
-      },
-      {
-        "id": "m6",
-        "from": "natgeo",
-        "text": "Acá te dejo el link con toda la info 👆",
-        "date": "2026-06-23T09:01:00"
       }
     ]
   },
   {
     "id": "c2",
-    "username": "tomas.dev",
-    "displayName": "Tomás Dev",
+    "username": "platok",
+    "displayName": "Platon",
     "avatar": "media/avatars/tomas.jpg",
-    "verified": false,
+    "verified": true,
     "online": true,
-    "unread": 0,
+    "unread": 1,
     "messages": [
       {
         "id": "m1",
-        "from": "tomas.dev",
-        "text": "Ey! Vi que también usás JavaScript, ¿te interesa colaborar en un proyecto?",
+        "from": "platok",
+        "text": "☕️?",
         "date": "2026-06-22T15:00:00"
-      },
-      {
-        "id": "m2",
-        "from": "me",
-        "text": "¡Claro! ¿De qué se trata?",
-        "date": "2026-06-22T15:30:00"
-      },
-      {
-        "id": "m3",
-        "from": "tomas.dev",
-        "text": "Estoy armando una app de mapas para comunidades locales. Full stack con Node y React.",
-        "date": "2026-06-22T15:35:00"
-      },
-      {
-        "id": "m4",
-        "from": "me",
-        "text": "Suena muy bien. ¿Cuándo arrancamos?",
-        "date": "2026-06-22T15:40:00"
-      },
-      {
-        "id": "m5",
-        "from": "tomas.dev",
-        "text": "La semana que viene! Te mando el repositorio 🚀",
-        "date": "2026-06-22T15:41:00"
       }
     ]
   },
   {
     "id": "c3",
-    "username": "viajes_latam",
-    "displayName": "Viajes LATAM",
-    "avatar": "media/avatars/viajes.jpg",
+    "username": "aristo.teles",
+    "displayName": "Aristoteles",
+    "avatar": "media/avatars/Aristoteles.png",
     "verified": true,
     "online": false,
     "unread": 1,
     "messages": [
       {
         "id": "m1",
-        "from": "viajes_latam",
-        "text": "¡Hola! ¿Ya visitaste la Patagonia? 🏔️",
+        "from": "aristo.teles",
+        "text": "Hola! Cómo estas?",
         "date": "2026-06-21T10:00:00"
       },
       {
         "id": "m2",
         "from": "me",
-        "text": "Todavía no, pero está en mi lista de pendientes 😅",
+        "text": "Bien bien",
         "date": "2026-06-21T10:10:00"
-      },
-      {
-        "id": "m3",
-        "from": "viajes_latam",
-        "text": "¡Tenemos paquetes increíbles para fin de año! Menos de $800 USD todo incluido 🌄",
-        "date": "2026-06-23T11:00:00"
       }
     ]
   },
   {
     "id": "c4",
-    "username": "foodie_uy",
-    "displayName": "Comidas del Mundo",
-    "avatar": "media/avatars/foodie.jpg",
-    "verified": false,
+    "username": "diogenes",
+    "displayName": "Diogenes",
+    "avatar": "media/avatars/Diogenes.jpg",
+    "verified": true,
     "online": false,
     "unread": 0,
     "messages": [
       {
         "id": "m1",
-        "from": "me",
-        "text": "¿Me pasás la receta de las empanadas que publicaste? 🥟",
+        "from": "diogenes",
+        "text": "QUITATE DE MI SOL!",
         "date": "2026-06-20T12:00:00"
       },
       {
         "id": "m2",
-        "from": "foodie_uy",
-        "text": "¡Claro! 500g de harina, 200g de manteca, sal... ¿querés el relleno también?",
+        "from": "diogenes",
+        "text": "Quien vive conforme a la naturaleza nunca será pobre.",
         "date": "2026-06-20T12:15:00"
-      },
-      {
-        "id": "m3",
-        "from": "me",
-        "text": "¡Sí por favor! Las quiero hacer este finde",
-        "date": "2026-06-20T12:16:00"
-      },
-      {
-        "id": "m4",
-        "from": "foodie_uy",
-        "text": "Relleno: 500g de carne picada, 2 cebollas, pimentón, comino y ají molido. Dorás la cebolla, agregás la carne y condimentás. ¡Fácil! 🔥",
-        "date": "2026-06-20T12:20:00"
-      },
-      {
-        "id": "m5",
-        "from": "me",
-        "text": "¡Gracias! Ya te cuento cómo salen 😊",
-        "date": "2026-06-20T12:22:00"
       }
     ]
   },
