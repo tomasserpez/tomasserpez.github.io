@@ -336,11 +336,17 @@ function buildPost(post) {
   if (post.type === 'youtube') {
     const id = ytId(post.file || '');
     if (id) {
+      const thumb = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+      const ratio = post.aspectRatio || '16/9';
       mediaEl = `
-        <div class="yt-wrap">
-          <iframe src="https://www.youtube.com/embed/${id}?rel=0&modestbranding=1"
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen loading="lazy"></iframe>
+        <div class="yt-thumb-wrap" id="yt-${id}" onclick="playYoutubeInline('${id}','${ratio}')">
+          <img src="${thumb}" alt="${post.title}" loading="lazy" onerror="this.style.display='none'">
+          <div class="yt-play-btn">
+            <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7c-.8-2.9-2.9-5.2-5.8-6C55.8 0 34 0 34 0S12.2 0 7.3 1.7c-2.9.8-5 3.1-5.8 6C0 12.6 0 24 0 24s0 11.4 1.5 16.3c.8 2.9 2.9 5.2 5.8 6C12.2 48 34 48 34 48s21.8 0 26.7-1.7c2.9-.8 5-3.1 5.8-6C68 35.4 68 24 68 24s0-11.4-1.5-16.3z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+          </div>
+          <button class="feed-expand-btn" onclick="event.stopPropagation();openYoutubeLightbox('${id}')" title="Expandir">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><polyline points="15,3 21,3 21,9"/><polyline points="9,21 3,21 3,15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+          </button>
         </div>`;
     } else {
       mediaEl = `<div class="media-placeholder gradient-avatar ${g}" style="display:flex;flex-direction:column;gap:10px">
@@ -501,38 +507,73 @@ function sharePost(id) {
 }
 function toggleFeedVideo(v) { v.muted = isMuted; v.paused ? v.play() : v.pause(); }
 
+function playYoutubeInline(id, ratio) {
+  const wrap = document.getElementById('yt-' + id);
+  if (!wrap) return;
+  wrap.onclick = null;
+  wrap.style.aspectRatio = ratio;
+  wrap.style.cursor = 'default';
+  wrap.innerHTML = `
+    <iframe src="https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:none;"></iframe>
+    <button class="feed-expand-btn" onclick="openYoutubeLightbox('${id}')" title="Expandir">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><polyline points="15,3 21,3 21,9"/><polyline points="9,21 3,21 3,15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+    </button>`;
+}
+
 /* ── VIDEO LIGHTBOX ───────────────────────────── */
 (function() {
   const lb  = () => document.getElementById('video-lightbox');
   const vid = () => document.getElementById('vlb-video');
   const mut = () => document.getElementById('vlb-mute');
 
-  function updateMuteBtn() {
+  function updateMuteBtn(show = true) {
+    mut().hidden = !show;
+    if (!show) return;
     mut().innerHTML = isMuted
       ? `<svg viewBox="0 0 24 24" fill="none"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19" fill="white" stroke="white"/><line x1="23" y1="9" x2="17" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/><line x1="17" y1="9" x2="23" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>`
       : `<svg viewBox="0 0 24 24" fill="none"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19" fill="white" stroke="white"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>`;
   }
 
   let originVideo = null;
+  let ytIframe = null;
 
   window.openVideoLightbox = function(src) {
-    // Pause whichever inline video has this src
     originVideo = [...document.querySelectorAll('.feed-video')].find(v => v.src === src) || null;
     if (originVideo) originVideo.pause();
-
     const v = vid();
+    v.hidden = false;
     v.src = src;
     v.muted = isMuted;
     v.currentTime = originVideo ? originVideo.currentTime : 0;
     v.play().catch(() => {});
-    updateMuteBtn();
+    updateMuteBtn(true);
+    lb().hidden = false;
+    document.body.style.overflow = 'hidden';
+  };
+
+  window.openYoutubeLightbox = function(ytId) {
+    // Hide native video, show iframe
+    const v = vid();
+    v.hidden = true;
+    v.src = '';
+
+    if (ytIframe) ytIframe.remove();
+    ytIframe = document.createElement('iframe');
+    ytIframe.src = `https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1`;
+    ytIframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    ytIframe.allowFullscreen = true;
+    ytIframe.style.cssText = 'width:min(100vw,calc(100vh*9/16));height:min(100vh,calc(100vw*16/9));max-width:100vw;max-height:100vh;border:none;';
+    lb().appendChild(ytIframe);
+
+    updateMuteBtn(false); // YouTube maneja su propio audio
     lb().hidden = false;
     document.body.style.overflow = 'hidden';
   };
 
   function closeLightbox() {
     const v = vid();
-    // Resume inline video from where lightbox left off
     if (originVideo) {
       originVideo.currentTime = v.currentTime;
       originVideo.muted = isMuted;
@@ -541,6 +582,8 @@ function toggleFeedVideo(v) { v.muted = isMuted; v.paused ? v.play() : v.pause()
     }
     v.pause();
     v.src = '';
+    v.hidden = false;
+    if (ytIframe) { ytIframe.remove(); ytIframe = null; }
     lb().hidden = true;
     document.body.style.overflow = '';
   }
@@ -552,7 +595,7 @@ function toggleFeedVideo(v) { v.muted = isMuted; v.paused ? v.play() : v.pause()
     vid().muted = isMuted;
     document.querySelectorAll('.reel-video, .feed-video').forEach(v => v.muted = isMuted);
     document.querySelectorAll('.reel-mute-btn, .feed-mute-btn').forEach(b => b.innerHTML = muteIcon());
-    updateMuteBtn();
+    updateMuteBtn(true);
   });
 
   document.getElementById('video-lightbox').addEventListener('click', e => {
